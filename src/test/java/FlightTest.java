@@ -13,6 +13,7 @@ public class FlightTest {
     private CabinCrewMember member2;
     private ArrayList<CabinCrewMember> cabinCrew;
     private Plane plane;
+    private Passenger passenger;
 
 
     @Before
@@ -25,6 +26,7 @@ public class FlightTest {
         cabinCrew.add(member2);
         plane = new Plane(PlaneType.AIRBUS_A320);
         flight = new Flight(pilot, cabinCrew, plane, "JAV1302", "BUD", "EDI", "1030");
+        passenger = new Passenger("Michael Rosenberg", 2);
     }
 
     @Test
@@ -60,6 +62,12 @@ public class FlightTest {
     @Test
     public void flightHasPassengers(){
         assertEquals(0, flight.getPassengers().size());
+    }
+
+    @Test
+    public void flightCanAddPassengers(){
+        flight.addPassenger(passenger);
+        assertEquals(1, flight.getPassengers().size());
     }
 
 
