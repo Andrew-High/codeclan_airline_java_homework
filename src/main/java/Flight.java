@@ -11,12 +11,12 @@ public class Flight {
     private String departureAirport;
     private String departureTime;
 
-    public Flight(Pilot pilot, ArrayList<CabinCrewMember> cabinCrew, ArrayList<Passenger> passengers, int capcacity, Plane plane, String flightNumber, String destination, String departureAirport, String departureTime) {
+    public Flight(Pilot pilot, ArrayList<CabinCrewMember> cabinCrew, Plane plane, String flightNumber, String destination, String departureAirport, String departureTime) {
         this.pilot = pilot;
         this.cabinCrew = cabinCrew;
-        this.passengers = passengers;
-        this.capacity = plane.getCapacity();
+        this.passengers = new ArrayList<Passenger>();
         this.plane = plane;
+        this.capacity = plane.getCapacity();
         this.flightNumber = flightNumber;
         this.destination = destination;
         this.departureAirport = departureAirport;
