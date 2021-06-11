@@ -1,0 +1,7 @@
+public enum CabinCrewRank {
+    CAPTAIN,
+    FIRST_OFFICER,
+    PURSER,
+    SENIOR_FLIGHT_ATTENDANT,
+    FLIGHT_ATTENDANT
+}
