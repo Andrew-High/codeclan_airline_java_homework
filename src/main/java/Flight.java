@@ -31,6 +31,10 @@ public class Flight {
         this.pilot = pilot;
     }
 
+    public String getPilotsName() {
+        return this.pilot.getName();
+    }
+
     public ArrayList<CabinCrewMember> getCabinCrew() {
         return cabinCrew;
     }
