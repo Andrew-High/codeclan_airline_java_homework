@@ -9,7 +9,7 @@ public class CabinCrewMemberTest {
 
         @Before
         public void before(){
-            cabinCrewMember = new CabinCrewMember("Charles",CabinCrewRank.FLIGHT_ATTENDANT);
+            cabinCrewMember = new CabinCrewMember("Charles",StaffRank.FLIGHT_ATTENDANT);
         }
 
         @Test
@@ -25,13 +25,13 @@ public class CabinCrewMemberTest {
 
         @Test
         public void cabinCrewMemberHasRank(){
-            assertEquals(CabinCrewRank.FLIGHT_ATTENDANT, cabinCrewMember.getRank());
+            assertEquals(StaffRank.FLIGHT_ATTENDANT, cabinCrewMember.getRank());
         }
 
         @Test
         public void cabinCrewMemberCanSetRank(){
-            cabinCrewMember.setRank(CabinCrewRank.SENIOR_FLIGHT_ATTENDANT);
-            assertEquals(CabinCrewRank.SENIOR_FLIGHT_ATTENDANT, cabinCrewMember.getRank());
+            cabinCrewMember.setRank(StaffRank.SENIOR_FLIGHT_ATTENDANT);
+            assertEquals(StaffRank.SENIOR_FLIGHT_ATTENDANT, cabinCrewMember.getRank());
         }
 
 }

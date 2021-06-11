@@ -1,4 +1,4 @@
-public enum CabinCrewRank {
+public enum StaffRank {
     CAPTAIN,
     FIRST_OFFICER,
     PURSER,

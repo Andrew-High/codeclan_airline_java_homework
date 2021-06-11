@@ -1,8 +1,8 @@
 public class CabinCrewMember {
     private String name;
-    private CabinCrewRank rank;
+    private StaffRank rank;
 
-    public CabinCrewMember(String name, CabinCrewRank rank) {
+    public CabinCrewMember(String name, StaffRank rank) {
         this.name = name;
         this.rank = rank;
     }
@@ -15,11 +15,11 @@ public class CabinCrewMember {
         this.name = name;
     }
 
-    public CabinCrewRank getRank() {
+    public StaffRank getRank() {
         return rank;
     }
 
-    public void setRank(CabinCrewRank rank) {
+    public void setRank(StaffRank rank) {
         this.rank = rank;
     }
 }
