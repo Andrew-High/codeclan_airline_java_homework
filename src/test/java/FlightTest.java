@@ -52,5 +52,12 @@ public class FlightTest {
         assertEquals("Geraldine", flight.getPilotsName());
     }
 
+    @Test
+    public void flightHasCabinCrew(){
+        assertEquals(2, flight.getCabinCrew().size());
+    }
+
+
+
 
 }
