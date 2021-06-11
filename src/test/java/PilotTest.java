@@ -24,14 +24,19 @@ public class PilotTest {
     }
 
     @Test
-    public void cabinCrewMemberHasRank(){
+    public void pilotHasRank(){
         assertEquals(StaffRank.CAPTAIN, pilot.getRank());
     }
 
     @Test
-    public void cabinCrewMemberCanSetRank(){
+    public void pilotCanSetRank(){
         pilot.setRank(StaffRank.FIRST_OFFICER);
         assertEquals(StaffRank.FIRST_OFFICER, pilot.getRank());
+    }
+
+    @Test
+    public void pilotCanFly(){
+        assertEquals("Look at me, I'm flying a plane!", pilot.fly());
     }
 
 }
