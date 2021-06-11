@@ -12,4 +12,8 @@ public class Plane {
     public void setType(PlaneType type) {
         this.type = type;
     }
+
+    public int getCapacity() {
+        return this.type.getCapacity();
+    }
 }

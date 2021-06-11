@@ -21,4 +21,9 @@ public class PlaneTest {
         plane.setType(PlaneType.AIRBUS_A320);
         assertEquals(PlaneType.AIRBUS_A320, plane.getType());
     }
+
+    @Test
+    public void planeHasCapacity(){
+        assertEquals(550, plane.getCapacity());
+    }
 }
