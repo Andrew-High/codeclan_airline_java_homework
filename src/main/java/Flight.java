@@ -99,7 +99,13 @@ public class Flight {
         this.departureTime = departureTime;
     }
 
+    public int checkNumberofAvailableSeats(){
+        return (this.capacity - this.passengers.size());
+    }
+
     public void addPassenger(Passenger passenger) {
-        this.passengers.add(passenger);
+        if (this.passengers.size() < this.capacity){
+            this.passengers.add(passenger);
+        }
     }
 }

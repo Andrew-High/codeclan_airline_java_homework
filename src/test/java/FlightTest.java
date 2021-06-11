@@ -70,5 +70,11 @@ public class FlightTest {
         assertEquals(1, flight.getPassengers().size());
     }
 
+    @Test
+    public void flightCanReturnNumberOfSeats(){
+        flight.addPassenger(passenger);
+        assertEquals(179, flight.checkNumberofAvailableSeats());
+    }
+
 
 }
